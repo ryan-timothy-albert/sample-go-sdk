@@ -1,7 +1,0 @@
-# PetSDK
-
-
-## Overview
-
-### Available Operations
-
