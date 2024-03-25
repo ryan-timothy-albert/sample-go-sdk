@@ -1,0 +1,11 @@
+workflowVersion: 1.0.0
+sources:
+    openapi:
+        inputs:
+            - location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+targets:
+    first-target:
+        target: go
+        source: openapi
+        codeSamples:
+            output: codeSamples.yaml
