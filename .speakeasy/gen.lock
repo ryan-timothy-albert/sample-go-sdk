@@ -3,10 +3,12 @@ id: 9aa80b67-3255-4db1-83fd-7f37b930f955
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.220.0
-  generationVersion: 2.286.7
-  releaseVersion: 0.0.1
-  configChecksum: 6e839ff320dbaf2d22a64dddbbb89894
+  speakeasyVersion: 1.222.0
+  generationVersion: 2.287.0
+  releaseVersion: 0.0.2
+  configChecksum: 235eeb2cd2323b507ffa33953bde1598
+  repoURL: https://github.com/ryan-timothy-albert/sample-go-sdk.git
+  installationURL: https://github.com/ryan-timothy-albert/sample-go-sdk
 features:
   go:
     core: 3.4.4

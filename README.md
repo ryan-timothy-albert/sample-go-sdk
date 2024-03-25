@@ -20,7 +20,7 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 ## SDK Installation
 
 ```bash
-go get petsdk
+go get github.com/ryan-timothy-albert/sample-go-sdk
 ```
 <!-- End SDK Installation [installation] -->
 
