@@ -35,7 +35,7 @@ package main
 import (
 	"context"
 	"log"
-	"petsdk"
+	petsdk "petsdk/v2"
 )
 
 func main() {
@@ -84,8 +84,8 @@ import (
 	"context"
 	"errors"
 	"log"
-	"petsdk"
-	"petsdk/models/sdkerrors"
+	petsdk "petsdk/v2"
+	"petsdk/v2/models/sdkerrors"
 )
 
 func main() {
@@ -127,7 +127,7 @@ package main
 import (
 	"context"
 	"log"
-	"petsdk"
+	petsdk "petsdk/v2"
 )
 
 func main() {
@@ -159,7 +159,7 @@ package main
 import (
 	"context"
 	"log"
-	"petsdk"
+	petsdk "petsdk/v2"
 )
 
 func main() {
