@@ -23,3 +23,11 @@ Based on:
 - Speakeasy CLI 1.228.1 (2.292.0) https://github.com/speakeasy-api/speakeasy
 ### Generated
 - [go v0.0.4] .
+
+## 2024-03-29 19:41:27
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.228.1 (2.292.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v2.0.4rc] .
