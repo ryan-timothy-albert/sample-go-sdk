@@ -12,7 +12,7 @@ actions:
             package main
 
             import(
-            	"petsdk"
+            	petsdk "petsdk/v2"
             	"context"
             	"log"
             )
@@ -41,9 +41,9 @@ actions:
             package main
 
             import(
-            	"petsdk"
+            	petsdk "petsdk/v2"
             	"context"
-            	"petsdk/models/components"
+            	"petsdk/v2/models/components"
             	"log"
             )
 
@@ -71,7 +71,7 @@ actions:
             package main
 
             import(
-            	"petsdk"
+            	petsdk "petsdk/v2"
             	"context"
             	"log"
             )

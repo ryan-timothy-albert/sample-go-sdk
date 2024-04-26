@@ -1,0 +1,28 @@
+speakeasyVersion: 1.274.1
+sources:
+    openapi:
+        sourceNamespace: openapi
+        sourceRevisionDigest: sha256:d55773e654fff350fd4889178006cb357a481328c01ceb78ab0d53d146b79fe1
+        sourceBlobDigest: sha256:5c75abd7a8ba18fbabfd9152b355e1397c16af6013bb2789bd91b1a63f7048ba
+        tags:
+            - latest
+targets:
+    first-target:
+        source: openapi
+        sourceNamespace: openapi
+        sourceRevisionDigest: sha256:d55773e654fff350fd4889178006cb357a481328c01ceb78ab0d53d146b79fe1
+        sourceBlobDigest: sha256:5c75abd7a8ba18fbabfd9152b355e1397c16af6013bb2789bd91b1a63f7048ba
+        outLocation: /github/workspace/repo
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        openapi:
+            inputs:
+                - location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+    targets:
+        first-target:
+            target: go
+            source: openapi
+            codeSamples:
+                output: codeSamples.yaml
