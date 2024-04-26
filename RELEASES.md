@@ -43,7 +43,7 @@ Based on:
 ## 2024-04-26 16:33:40
 ### Changes
 Based on:
-- OpenAPI Doc  
+- OpenAPI Docs
 - Speakeasy CLI 1.274.1 (2.314.0) https://github.com/speakeasy-api/speakeasy
 ### Generated
 - [go v2.0.6] .
