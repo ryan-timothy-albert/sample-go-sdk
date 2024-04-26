@@ -5,8 +5,8 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.274.1
   generationVersion: 2.314.0
-  releaseVersion: 2.0.4rc
-  configChecksum: f07e73c2732fc0c6abc54ac3df4dba0e
+  releaseVersion: 2.0.5
+  configChecksum: cbe41819a6c9f43b4a8c3ed3ffb88d82
   repoURL: https://github.com/ryan-timothy-albert/sample-go-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-go-sdk
 features:
