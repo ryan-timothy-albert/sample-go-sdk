@@ -47,3 +47,13 @@ Based on:
 - Speakeasy CLI 1.274.1 (2.314.0) https://github.com/speakeasy-api/speakeasy
 ### Generated
 - [go v2.0.6] .
+
+## 2024-04-26 17:30:16
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.275.0 (2.314.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v2.0.7] .
+### Releases
+- [Go v2.0.7] https://github.com/ryan-timothy-albert/sample-go-sdk/releases/tag/v2.0.7 - .

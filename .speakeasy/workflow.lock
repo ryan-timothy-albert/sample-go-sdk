@@ -1,17 +1,17 @@
-speakeasyVersion: 1.274.1
+speakeasyVersion: 1.275.0
 sources:
     openapi:
         sourceNamespace: openapi
-        sourceRevisionDigest: sha256:872a1abafd061f5313fa176a4a5d1054f9d5aaa8a2c6ac3986f784a4b523d2ed
-        sourceBlobDigest: sha256:e9feb07914d0cc727496d07af303e3dba68bb00b8b03666b71cf1c40dcb23fc4
+        sourceRevisionDigest: sha256:6ae16ceb72c5915f226cc85b4f792e79e2888806623ac079418e2a4bdb07fc39
+        sourceBlobDigest: sha256:a9f59d102ed034d5060db0861f28320952eff5b9d2839a8772a5fbf0e75086e4
         tags:
             - latest
 targets:
     first-target:
         source: openapi
         sourceNamespace: openapi
-        sourceRevisionDigest: sha256:872a1abafd061f5313fa176a4a5d1054f9d5aaa8a2c6ac3986f784a4b523d2ed
-        sourceBlobDigest: sha256:e9feb07914d0cc727496d07af303e3dba68bb00b8b03666b71cf1c40dcb23fc4
+        sourceRevisionDigest: sha256:6ae16ceb72c5915f226cc85b4f792e79e2888806623ac079418e2a4bdb07fc39
+        sourceBlobDigest: sha256:a9f59d102ed034d5060db0861f28320952eff5b9d2839a8772a5fbf0e75086e4
         outLocation: /github/workspace/repo
 workflow:
     workflowVersion: 1.0.0
@@ -20,6 +20,8 @@ workflow:
         openapi:
             inputs:
                 - location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
+            registry:
+                location: registry.speakeasyapi.dev/ryan-local/ryan-local/openapi
     targets:
         first-target:
             target: go
