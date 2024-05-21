@@ -8,86 +8,16 @@ actions:
       x-codeSamples:
         - lang: go
           label: listPets
-          source: |-
-            package main
-
-            import(
-            	petsdk "petsdk/v2"
-            	"context"
-            	"log"
-            )
-
-            func main() {
-                s := petsdk.New()
-
-
-                var limit *int = petsdk.Int(21453)
-
-                ctx := context.Background()
-                res, err := s.ListPets(ctx, limit)
-                if err != nil {
-                    log.Fatal(err)
-                }
-                if res.Pets != nil {
-                    // handle response
-                }
-            }
+          source: "package main\n\nimport(\n\tpetsdk \"petsdk/v2\"\n\t\"context\"\n\t\"log\"\n)\n\nfunc main() {\n    s := petsdk.New()\n\n    var limit *int = petsdk.Int(21453)\n    \n    ctx := context.Background()\n    res, err := s.ListPets(ctx, limit)\n    if err != nil {\n        log.Fatal(err)\n    }\n    if res.Pets != nil {\n        // handle response\n    }\n}"
   - target: $["paths"]["/pets"]["post"]
     update:
       x-codeSamples:
         - lang: go
           label: createPets
-          source: |-
-            package main
-
-            import(
-            	petsdk "petsdk/v2"
-            	"context"
-            	"petsdk/v2/models/components"
-            	"log"
-            )
-
-            func main() {
-                s := petsdk.New()
-
-                ctx := context.Background()
-                res, err := s.CreatePets(ctx, components.Pet{
-                    ID: 596804,
-                    Name: "<value>",
-                })
-                if err != nil {
-                    log.Fatal(err)
-                }
-                if res != nil {
-                    // handle response
-                }
-            }
+          source: "package main\n\nimport(\n\tpetsdk \"petsdk/v2\"\n\t\"petsdk/v2/models/components\"\n\t\"context\"\n\t\"log\"\n)\n\nfunc main() {\n    s := petsdk.New()\n\n    request := components.Pet{\n        ID: 596804,\n        Name: \"<value>\",\n    }\n    \n    ctx := context.Background()\n    res, err := s.CreatePets(ctx, request)\n    if err != nil {\n        log.Fatal(err)\n    }\n    if res != nil {\n        // handle response\n    }\n}"
   - target: $["paths"]["/pets/{petId}"]["get"]
     update:
       x-codeSamples:
         - lang: go
           label: showPetById
-          source: |-
-            package main
-
-            import(
-            	petsdk "petsdk/v2"
-            	"context"
-            	"log"
-            )
-
-            func main() {
-                s := petsdk.New()
-
-
-                var petID string = "<value>"
-
-                ctx := context.Background()
-                res, err := s.ShowPetByID(ctx, petID)
-                if err != nil {
-                    log.Fatal(err)
-                }
-                if res.Pet != nil {
-                    // handle response
-                }
-            }
+          source: "package main\n\nimport(\n\tpetsdk \"petsdk/v2\"\n\t\"context\"\n\t\"log\"\n)\n\nfunc main() {\n    s := petsdk.New()\n\n    var petID string = \"<value>\"\n    \n    ctx := context.Background()\n    res, err := s.ShowPetByID(ctx, petID)\n    if err != nil {\n        log.Fatal(err)\n    }\n    if res.Pet != nil {\n        // handle response\n    }\n}"

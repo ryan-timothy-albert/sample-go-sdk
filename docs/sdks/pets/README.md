@@ -25,9 +25,8 @@ import(
 func main() {
     s := petsdk.New()
 
-
     var limit *int = petsdk.Int(21453)
-
+    
     ctx := context.Background()
     res, err := s.Pets.ListPets(ctx, limit)
     if err != nil {
@@ -65,19 +64,21 @@ package main
 
 import(
 	petsdk "petsdk/v2"
-	"context"
 	"petsdk/v2/models/components"
+	"context"
 	"log"
 )
 
 func main() {
     s := petsdk.New()
 
-    ctx := context.Background()
-    res, err := s.Pets.CreatePets(ctx, components.Pet{
+    request := components.Pet{
         ID: 596804,
         Name: "<value>",
-    })
+    }
+    
+    ctx := context.Background()
+    res, err := s.Pets.CreatePets(ctx, request)
     if err != nil {
         log.Fatal(err)
     }
@@ -120,9 +121,8 @@ import(
 func main() {
     s := petsdk.New()
 
-
     var petID string = "<value>"
-
+    
     ctx := context.Background()
     res, err := s.Pets.ShowPetByID(ctx, petID)
     if err != nil {
