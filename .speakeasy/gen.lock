@@ -3,21 +3,21 @@ id: 9aa80b67-3255-4db1-83fd-7f37b930f955
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.295.0
-  generationVersion: 2.333.3
-  releaseVersion: 2.1.0
-  configChecksum: 3a7942b2229cd55e80c8433568b0867f
+  speakeasyVersion: 1.295.2
+  generationVersion: 2.335.5
+  releaseVersion: 2.1.1
+  configChecksum: e1269ac05b22e8261db1f5692fa1cd98
   repoURL: https://github.com/ryan-timothy-albert/sample-go-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-go-sdk
 features:
   go:
     additionalDependencies: 0.1.0
-    core: 3.4.8
+    core: 3.4.10
     flattening: 2.81.1
     globalSecurityCallbacks: 0.1.0
     globalServerURLs: 2.82.2
     intellisenseMarkdownSupport: 0.1.0
-    responseFormat: 0.1.1
+    responseFormat: 0.1.2
     sdkHooks: 0.1.0
 generatedFiles:
   - pets.go
