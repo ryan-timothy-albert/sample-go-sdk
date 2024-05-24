@@ -10,9 +10,7 @@ import (
 
 func main() {
 	s := petsdk.New()
-
 	var limit *int = petsdk.Int(21453)
-
 	ctx := context.Background()
 	res, err := s.Pets.ListPets(ctx, limit)
 	if err != nil {

@@ -40,9 +40,7 @@ import (
 
 func main() {
 	s := petsdk.New()
-
 	var limit *int = petsdk.Int(21453)
-
 	ctx := context.Background()
 	res, err := s.Pets.ListPets(ctx, limit)
 	if err != nil {
@@ -90,9 +88,7 @@ import (
 
 func main() {
 	s := petsdk.New()
-
 	var limit *int = petsdk.Int(21453)
-
 	ctx := context.Background()
 	res, err := s.Pets.ListPets(ctx, limit)
 	if err != nil {
@@ -134,9 +130,7 @@ func main() {
 	s := petsdk.New(
 		petsdk.WithServerIndex(0),
 	)
-
 	var limit *int = petsdk.Int(21453)
-
 	ctx := context.Background()
 	res, err := s.Pets.ListPets(ctx, limit)
 	if err != nil {
@@ -166,9 +160,7 @@ func main() {
 	s := petsdk.New(
 		petsdk.WithServerURL("http://petstore.swagger.io/v1"),
 	)
-
 	var limit *int = petsdk.Int(21453)
-
 	ctx := context.Background()
 	res, err := s.Pets.ListPets(ctx, limit)
 	if err != nil {
