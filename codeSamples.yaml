@@ -3,6 +3,32 @@ info:
   title: CodeSamples overlay for go target
   version: 0.0.0
 actions:
+  - target: $["paths"]["/pets/{petId}"]["get"]
+    update:
+      x-codeSamples:
+        - lang: go
+          label: showPetById
+          source: |-
+            package main
+
+            import(
+            	petsdk "petsdk/v2"
+            	"context"
+            	"log"
+            )
+
+            func main() {
+                s := petsdk.New()
+                var petID string = "<value>"
+                ctx := context.Background()
+                res, err := s.Pets.ShowPetByID(ctx, petID)
+                if err != nil {
+                    log.Fatal(err)
+                }
+                if res.Pet != nil {
+                    // handle response
+                }
+            }
   - target: $["paths"]["/pets"]["get"]
     update:
       x-codeSamples:
@@ -56,32 +82,6 @@ actions:
                     log.Fatal(err)
                 }
                 if res != nil {
-                    // handle response
-                }
-            }
-  - target: $["paths"]["/pets/{petId}"]["get"]
-    update:
-      x-codeSamples:
-        - lang: go
-          label: showPetById
-          source: |-
-            package main
-
-            import(
-            	petsdk "petsdk/v2"
-            	"context"
-            	"log"
-            )
-
-            func main() {
-                s := petsdk.New()
-                var petID string = "<value>"
-                ctx := context.Background()
-                res, err := s.Pets.ShowPetByID(ctx, petID)
-                if err != nil {
-                    log.Fatal(err)
-                }
-                if res.Pet != nil {
                     // handle response
                 }
             }

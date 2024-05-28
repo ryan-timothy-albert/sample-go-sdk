@@ -98,3 +98,13 @@ Based on:
 - [go v2.1.3] .
 ### Releases
 - [Go v2.1.3] https://github.com/ryan-timothy-albert/sample-go-sdk/releases/tag/v2.1.3 - .
+
+## 2024-05-28 00:35:06
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.296.1 (2.338.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v2.1.3] .
+### Releases
+- [Go v2.1.3] https://github.com/ryan-timothy-albert/sample-go-sdk/releases/tag/v2.1.3 - .
